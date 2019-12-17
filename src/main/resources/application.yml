@@ -1,0 +1,12 @@
+server:
+  port: 10086
+logging:
+  level:
+    org.apache.http: info
+
+  redis:
+    host: localhost
+    # 连接超时时间（记得添加单位，Duration）
+    timeout: 10000ms
+    # Redis默认情况下有16个分片，这里配置具体使用的分片
+    database: 5
